@@ -141,7 +141,7 @@ impl Migration {
     /// specific for one database, meaning that future migrations
     /// might become cumbersome.
     pub fn inject_custom<S: Into<String>>(&mut self, sql: S) {
-        self.changes.push(DatabaseChange::CustomLine(sql.into()));
+        //self.changes.push(DatabaseChange::CustomLine(sql.into()));
     }
     
     /// Automatically infer the `down` step of this migration
